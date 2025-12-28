@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BMW Reels | Instagram Promo</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #000;
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    /* HERO */
+    .hero {
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.85)),
+        url('bmw-logo.jpg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      letter-spacing: 3px;
+    }
+
+    .hero span {
+      color: #00aaff;
+    }
+
+    .hero p {
+      margin: 20px 0;
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    .btn {
+      padding: 14px 40px;
+      border-radius: 40px;
+      background: linear-gradient(135deg, #00aaff, #005eff);
+      color: #fff;
+      text-decoration: none;
+      box-shadow: 0 0 25px rgba(0,170,255,0.6);
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    /* VIDEO REEL */
+    .reel-section {
+      position: relative;
+      height: 90vh;
+      overflow: hidden;
+    }
+
+    .reel-section video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .reel-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      padding-bottom: 60px;
+      text-align: center;
+    }
+
+    .reel-overlay h2 {
+      font-size: 2.5rem;
+      color: #00aaff;
+      text-shadow: 0 0 25px rgba(0,170,255,0.8);
+    }
+
+    /* ABOUT */
+    .section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 2.5rem;
+      color: #00aaff;
+      margin-bottom: 20px;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      margin-top: 50px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.05);
+      padding: 30px;
+      border-radius: 20px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 30px rgba(0,170,255,0.4);
+    }
+
+    footer {
+      padding: 30px;
+      text-align: center;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div>
+      <h1>BMW <span>Reels</span></h1>
+      <p>Cinematic BMW Edits • M Series • Luxury Performance</p>
+      <a class="btn" href="https://www.instagram.com/bmw.reels.in" target="_blank">
+        Follow on Instagram
+      </a>
+    </div>
+  </section>
+
+  <!-- AUTO PLAY REEL -->
+  <section class="reel-section">
+    <video autoplay muted loop playsinline>
+      <source src="reel.mp4" type="video/mp4">
+    </video>
+    <div class="reel-overlay">
+      <h2>Feel the Speed ⚡</h2>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section">
+    <h2>Why BMW Reels?</h2>
+    <div class="features">
+      <div class="card">🔥 Daily BMW Reels</div>
+      <div class="card">🚗 M Series Power</div>
+      <div class="card">🎬 Cinematic Edits</div>
+      <div class="card">💎 Luxury Vibes</div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 BMW Reels | Not affiliated with BMW AG
+  </footer>
+
+</body>
+</html>
